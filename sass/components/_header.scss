@@ -97,12 +97,27 @@
   margin-left: 318px;
 }
 
+.auth {
+  display: none;
+}
+
 .menu {
   display: flex;
   gap: 50px;
 }
 
+.menu {
+  display: none;
+}
+
 .navigation {
   display: flex;
   align-items: center;
+}
+
+.menu-open {
+  margin-left: auto;
+}
+.icon-menu {
+  
 }
