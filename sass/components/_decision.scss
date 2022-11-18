@@ -1,0 +1,58 @@
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--brand-color);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 696px;
+}
+
+.button {
+  background-color: var(--button-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--brand-color);
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  cursor: pointer;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.button-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.decision {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+  display: flex;
+  align-items: center;
+}
