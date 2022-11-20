@@ -1,4 +1,11 @@
 .hero {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  
+.hero {
+  display: revert;
   padding-bottom: 94px;
 }
 
@@ -38,4 +45,5 @@
   padding-bottom: 27px;
   position: absolute;
   bottom: 0px;
+}
 }
