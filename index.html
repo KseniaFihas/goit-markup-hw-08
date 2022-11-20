@@ -251,14 +251,29 @@
             </li>
           </ul>
         </div>
-      </section>
+      <!-- </section> -->
       <section class="team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="pre-title">Наша команда</h2>
 
           <ul class="list-team our-team">
             <li class="icon-item">
-              <img src="./img/img4.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source
+                srcset="./img/img4.jpg  1x,
+                        ./img/img4-2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                        <source
+                srcset="./img/img4-tab.jpg  1x,
+                        .img/img4-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                        <source srcset="./img/img4-mob.jpg  1x,
+                         ./img/img4-mob-2x.jpg 2x" 
+                         media="(min-width: 320px)" />
+                      
+                            <img src="./img/img4.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
+                            </picture>
+               
               <div class="title-profession">
                 <h3 class="title-name">Ігор Дем'яненко</h3>
                 <p class="description-name">Product Designer</p>
@@ -269,6 +284,7 @@
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
+                    
                   </li>
                   <li class="soc-item">
                     <a href="" class="soc-link">
@@ -296,7 +312,16 @@
             </li>
 
             <li class="icon-item">
-              <img src="./img/img5.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source srcset="./img/img5.jpg  1x,
+                                      ./img/img5-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img4-tab.jpg  1x,
+                                      ./img/img5-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img4-mob.jpg  1x,
+                                       ./img/img5-mob-2x.jpg 2x" media="(min-width: 320px)" />
+              
+                <img src="./img/img5.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              </picture>
               <div class="title-profession">
                 <h3 class="title-name">Ольга Рєпіна</h3>
                 <p class="description-name">Frontend Developer</p>
@@ -333,7 +358,16 @@
               </div>
             </li>
             <li class="icon-item">
-              <img src="./img/img6.jpg" alt="Микола Тарасов" width="270" />
+            <picture>
+              <source srcset="./img/img6.jpg  1x,
+                                                  ./img/img6-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/img4-tab.jpg  1x,
+                                                  ./img/img6-tab-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/img4-mob.jpg  1x,
+                                                   ./img/img6-mob-2x.jpg 2x" media="(min-width: 320px)" />
+            
+              <img src="./img/img6.jpg" alt="Микола Тарасов" width="270" height="260" />
+            </picture>
               <div class="title-profession">
                 <h3 class="title-name">Микола Тарасов</h3>
                 <p class="description-name">Marketing</p>
@@ -370,7 +404,16 @@
               </div>
             </li>
             <li class="icon-item">
-              <img src="./img/img7.jpg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source srcset="./img/img7.jpg  1x,
+                                                                ./img/img7-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img7-tab.jpg  1x,
+                                                                ./img/img7-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img7-mob.jpg  1x,
+                                                                 ./img/img7-mob-2x.jpg 2x" media="(min-width: 320px)" />
+              
+                <img src="./img/img7.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+              </picture>
               <div class="title-profession">
                 <h3 class="title-name">Михайло Єрмаков</h3>
                 <p class="description-name">UI Designer</p>
@@ -408,7 +451,7 @@
             </li>
           </ul>
         </div>
-      <!-- </section> -->
+      </section>
       <section class="clients">
         <div class="container container-clients">
           <h2 class="title-clients">Постійні клієнти</h2>
@@ -457,7 +500,7 @@
           </ul>
         </div>
       </section>
-    <!-- </main> -->
+    </main>
     <!-- <footer class="footer">
       <div class="container footer-item">
         <div class="footer-tab">
