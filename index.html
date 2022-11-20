@@ -21,17 +21,13 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo navigation__logo" href="/index.html"
             >Web<span class="logo logo--black">Studio</span></a
           >
-<button data-modal-open type="button" class="menu-open">
-  <svg class="icon-menu" width="40" height="40">
-    <use href="./images/icons.svg#icon-menu"></use>
-  </svg>
-</button>
+
                   <ul class="menu list">
             <li class="menu__item">
               <a class="current menu__link" href="/index.html">Студія</a>
@@ -62,7 +58,50 @@
           </li>
         </ul>
       </div>
-    </header>
+      <button type="button" class="menu-open" data-menu-open>
+        <svg class="icon-menu" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu__item">
+                <a class="current mob-menu__link" href="/index.html">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobmenu__item">
+                <a class="mob-menu__link" href="">Контакти</a>
+              </li>
+            </ul>
+            </nav>
+            <ul class="mob-auth">
+              <li class="mob-auth__item">
+                <a class="mob-auth__link" href="mailto:info@devstudio.com">
+                  <svg class="mob-auth__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>info@devstudio.com
+                </a>
+              </li>
+              <li class="mob-auth__item">
+                <a class="mob-tel mob-auth__link" href="tel:+380961111111">
+                  <svg class="mob-auth__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+    </header> -->
     <!-- <main>
       <section class="decision overlay">
         <div class="container button-buy">
@@ -369,9 +408,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      <!-- </section> -->
       <section class="clients">
-        <div class="container">
+        <div class="container container-clients">
           <h2 class="title-clients">Постійні клієнти</h2>
           <ul class="clients-list list">
             <li class="client-item">
@@ -418,9 +457,10 @@
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="footer">
+    <!-- </main> -->
+    <!-- <footer class="footer">
       <div class="container footer-item">
+        <div class="footer-tab">
         <div class="footer-adress">
           <a class="logo-footer" href="/index.html"
             >Web<span class="partlogo">Studio</span></a
@@ -474,6 +514,8 @@
             </li>
           </ul>
         </div>
+        </div>
+        
         <form class="footer-send">
           <label for="email" class="send"
             ><span> Підпишіться на розсилку </span>
@@ -494,7 +536,9 @@
           </button>
         </form>
       </div>
-    </footer>
+      
+    </footer> -->
     <script src="./js/modal.js"></script>
-  </body>
-</html> -->
+    <script src="./js/menu.js"></script> 
+      </body>
+</html> 
