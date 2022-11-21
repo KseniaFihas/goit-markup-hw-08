@@ -1,7 +1,7 @@
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -19,7 +19,7 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -130,8 +130,8 @@
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.67;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
@@ -155,8 +155,8 @@
 
 .icon {
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #212121;
   border-radius: 4px;
   margin-right: 8px;
@@ -171,5 +171,19 @@
     background-image: url(../images/checked.svg);
     background-size: contain;
     background-origin: content-box;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+  .modal-title {
+    line-height: 1.15;
+  }
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
