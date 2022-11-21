@@ -8,7 +8,7 @@
 .footer-item {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
+  max-width: 480px;
 }
 
 .footer-title {
@@ -179,18 +179,11 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-item {
-    display: flex;
-    flex-direction: column;
-    max-width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 768px;
   }
   .footer-adress {
@@ -198,20 +191,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 76px;
+    
   }
   .footer-soc {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-  }
-  .footer-tab {
-    display: flex;
-    padding-left: 76px;
-    padding-right: 89px;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 60px;
+    justify-content: flex-start;
+    margin: 0 auto;
   }
 
   .footer-send {
@@ -219,6 +207,7 @@
     flex-direction: column;
    align-items: center;
    justify-content: center;
+   margin: 0 auto;
   }
   .input-email {
     font-weight: 400;
@@ -239,7 +228,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   .send span {
@@ -259,7 +247,6 @@
   .footer-item {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
     min-width: 1200px;
   }
 
@@ -270,6 +257,7 @@
   }
   .footer-soc {
     margin-left: 70px;
+    margin-right: 0;
   }
   .street {
     font-size: 14px;
@@ -281,11 +269,23 @@
     margin-bottom: 0px;
   }
   .footer-send {
-    display: flex;
-    align-items: baseline;
     margin-left: 93px;
-    
+    display: flex;
+   position: relative;
   }
+
+.send span {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  
+}
+
   .input-email {
     font-weight: 400;
     font-size: 16px;
@@ -296,9 +296,10 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    min-width: 358px;
+    width: 358px;
     height: 50px;
     padding-left: 16px;
+    margin-bottom: 0;
   }
   .subscribe {
     background-color: var(--button-color);
@@ -312,22 +313,17 @@
     min-width: 200px;
     height: 50px;
     border: none;
-    margin-left: 12px;
+  
     cursor: pointer;
-    display: inline-flex;
+    display: flex;
+    
     padding-left: 28px;
     align-items: center;
+    position: absolute;
+  top: 40%;
+    left: 370px;
   }
-    .send span {
-      display: block;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin-bottom: 20px;
-    }
+    
         .adress {
           font-style: normal;
           margin-top: 20px;
