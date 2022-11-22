@@ -21,13 +21,13 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-     <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo navigation__logo" href="/index.html"
             >Web<span class="logo logo--black">Studio</span></a
           >
-                  <ul class="menu list">
+          <ul class="menu list">
             <li class="menu__item">
               <a class="current menu__link" href="/index.html">Студія</a>
             </li>
@@ -59,6 +59,8 @@
         <button class="menu-open" data-menu-open>
           <svg width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
       <div class="mob-menu is-hidden" data-menu>
         <div class="container">
@@ -66,52 +68,84 @@
             <button type="button" class="menu-close" data-menu-close>
               <svg width="40" height="40">
                 <use href="./images/icons.svg#icon-close"></use>
+              </svg>
             </button>
             <ul class="mob-menu-list list">
               <li class="mob-menu-list__item">
-               <a class="current mob-menu-list__link link" href="/index.html">Студія</a>
+                <a class="current mob-menu-list__link link" href="/index.html"
+                  >Студія</a
+                >
               </li>
               <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link" href="./portfolio.html">Портфоліо</a>
+                <a class="mob-menu-list__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="mob-menu-list__item">
                 <a class="mob-menu-list__link link" href="">Контакти</a>
               </li>
-              </ul>
+            </ul>
           </div>
           <div class="mob-menu-bottom">
             <div class="mob-connect">
               <ul class="mob-auth">
-                <li class="auth__item">
-                  <a class="auth__link" href="mailto:info@devstudio.com">
-                    <svg class="auth__icon" width="16" height="12">
-                      <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com
+                <li class="mob-auth__item">
+                  <a class="mob-tel mob-auth__link" href="tel:+380961111111">
+                    +38 096 111 11 11
                   </a>
                 </li>
-              <li class="auth__item">
-                <a class="tel auth__link" href="tel:+380961111111">
-                  <svg class="auth__icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
+                <li class="mob-auth__item">
+                  <a
+                    class="mob-link mob-auth__link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
               </ul>
-
             </div>
             <ul class="mob-soc list">
               <li class="mob-soc__item">
-                <a class="mob-soc__link link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
               </li>
               <li class="mob-soc__item">
-                <a class="mob-soc__link link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </header> 
+    </header>
     <main>
       <section class="decision overlay">
         <div class="container button-buy">
@@ -269,16 +303,27 @@
           <ul class="list-team our-team">
             <li class="icon-item">
               <picture>
-                <source srcset="./img/img4.jpg  1x,
-                                                    ./img/img4-2x.jpg 2x" media="(min-width: 1200px)" />
-                <source srcset="./img/img4-tab.jpg  1x,
-                                                    ./img/img4-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                <source srcset="./img/img4-mob.jpg  1x,
-                                                     ./img/img4-mob-2x.jpg 2x" media="(min-width: 320px)" />
-              
-                <img src="./img/img4.jpg" alt="гор Дем'яненко" width="270" height="260" />
+                <source
+                  srcset="./img/img4.jpg 1x, ./img/img4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img4-tab.jpg 1x, ./img/img4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/img4-mob.jpg 1x, ./img/img4-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./img/img4.jpg"
+                  alt="гор Дем'яненко"
+                  width="270"
+                  height="260"
+                />
               </picture>
-               
+
               <div class="title-profession">
                 <h3 class="title-name">Ігор Дем'яненко</h3>
                 <p class="description-name">Product Designer</p>
@@ -289,7 +334,6 @@
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
-                    
                   </li>
                   <li class="soc-item">
                     <a href="" class="soc-link">
@@ -318,14 +362,25 @@
 
             <li class="icon-item">
               <picture>
-                <source srcset="./img/img5.jpg  1x,
-                                      ./img/img5-2x.jpg 2x" media="(min-width: 1200px)" />
-                <source srcset="./img/img4-tab.jpg  1x,
-                                      ./img/img5-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                <source srcset="./img/img4-mob.jpg  1x,
-                                       ./img/img5-mob-2x.jpg 2x" media="(min-width: 320px)" />
-              
-                <img src="./img/img5.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+                <source
+                  srcset="./img/img5.jpg 1x, ./img/img5-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img4-tab.jpg 1x, ./img/img5-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/img4-mob.jpg 1x, ./img/img5-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./img/img5.jpg"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                  height="260"
+                />
               </picture>
               <div class="title-profession">
                 <h3 class="title-name">Ольга Рєпіна</h3>
@@ -363,16 +418,27 @@
               </div>
             </li>
             <li class="icon-item">
-            <picture>
-              <source srcset="./img/img6.jpg  1x,
-                                                  ./img/img6-2x.jpg 2x" media="(min-width: 1200px)" />
-              <source srcset="./img/img4-tab.jpg  1x,
-                                                  ./img/img6-tab-2x.jpg 2x" media="(min-width: 768px)" />
-              <source srcset="./img/img4-mob.jpg  1x,
-                                                   ./img/img6-mob-2x.jpg 2x" media="(min-width: 320px)" />
-            
-              <img src="./img/img6.jpg" alt="Микола Тарасов" width="270" height="260" />
-            </picture>
+              <picture>
+                <source
+                  srcset="./img/img6.jpg 1x, ./img/img6-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img4-tab.jpg 1x, ./img/img6-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/img4-mob.jpg 1x, ./img/img6-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./img/img6.jpg"
+                  alt="Микола Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="title-profession">
                 <h3 class="title-name">Микола Тарасов</h3>
                 <p class="description-name">Marketing</p>
@@ -410,14 +476,25 @@
             </li>
             <li class="icon-item">
               <picture>
-                <source srcset="./img/img7.jpg  1x,
-                                                                ./img/img7-2x.jpg 2x" media="(min-width: 1200px)" />
-                <source srcset="./img/img7-tab.jpg  1x,
-                                                                ./img/img7-tab-2x.jpg 2x" media="(min-width: 768px)" />
-                <source srcset="./img/img7-mob.jpg  1x,
-                                                                 ./img/img7-mob-2x.jpg 2x" media="(min-width: 320px)" />
-              
-                <img src="./img/img7.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+                <source
+                  srcset="./img/img7.jpg 1x, ./img/img7-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img7-tab.jpg 1x, ./img/img7-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/img7-mob.jpg 1x, ./img/img7-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./img/img7.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                  height="260"
+                />
               </picture>
               <div class="title-profession">
                 <h3 class="title-name">Михайло Єрмаков</h3>
@@ -506,9 +583,8 @@
         </div>
       </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer-item">
-        
         <div class="footer-adress">
           <a class="logo-footer" href="/index.html"
             >Web<span class="partlogo">Studio</span></a
@@ -543,7 +619,7 @@
               <a href="" class="footer-soc-link">
                 <svg class="footer-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg> 
+                </svg>
               </a>
             </li>
             <li class="footer-soc-item">
@@ -562,8 +638,7 @@
             </li>
           </ul>
         </div>
-        
-        
+
         <form class="footer-send">
           <label for="email" class="send"
             ><span> Підпишіться на розсилку </span>
@@ -584,9 +659,8 @@
           </button>
         </form>
       </div>
-      
-    </footer> 
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-      </body>
-</html> 
+  </body>
+</html>

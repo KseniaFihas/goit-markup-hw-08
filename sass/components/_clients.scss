@@ -1,7 +1,6 @@
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
- 
 }
 
 .container-clients {
@@ -56,52 +55,35 @@
 }
 
 @media screen and (min-width: 768px) {
-
-.container-clients {
+  .container-clients {
     min-width: 768px;
   }
 
-  .clients-list {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-  
-    .client-item {
-      width: calc((100% - 60px) / 3);
-      height: 92px;
-    }
+  .client-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 @media screen and (min-width: 1200px) {
-.container-clients {
+  .container-clients {
     min-width: 1200px;
   }
 
   .clients {
-      padding-top: 94px;
-      padding-bottom: 94px;
-  
-    }
-        .title-clients {
-          margin-bottom: 50px;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 1.67;
-          text-align: center;
-          letter-spacing: 0.03em;
-          color: #212121;
-        }
-    
-        .clients-list {
-          display: flex;
-          gap: 30px;
-          
-        }
-    
-        .client-item {
-          width: calc((100% - 150px) / 6);
-          height: 92px;
-        }
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .title-clients {
+    font-size: 36px;
+    line-height: 1.67;
+  }
+
+  .clients-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .client-item {
+    width: calc((100% - 150px) / 6);
+  }
 }

@@ -9,7 +9,7 @@
 }
 
 .container-team {
-max-width: 480px;
+  max-width: 480px;
 }
 
 .team {
@@ -17,7 +17,6 @@ max-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 
 .list-team {
   display: flex;
@@ -79,45 +78,40 @@ max-width: 480px;
 .icon-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    width: 450px;
+  width: 450px;
 }
 
-    @media screen and (min-width: 768px) {
-      .icon-item {
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
-          width: calc((100% - 30px) / 2);
-        }
+@media screen and (min-width: 768px) {
+  .icon-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    width: calc((100% - 30px) / 2);
+  }
 
-                .container-team {
-                  min-width: 768px;
-                }
+  .container-team {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    width: calc((100% - 90px) / 4);
+  }
 
-                        
-    }
-         @media screen and (min-width: 1200px) {
-          .icon-item {
-              box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-              width: calc((100% - 90px) / 4);
-        
-            }
+  .pre-title {
+    font-size: 36px;
+    line-height: 1.67;
 
-.pre-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-  margin-bottom: 50px;
-  text-align: center;
+    color: var(--text-color);
+    margin-bottom: 50px;
+  }
+  .team {
+    background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .container-team {
+    min-width: 1200px;
+  }
 }
-.team {
-  background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.container-team {
-  min-width: 1200px;
-}
-          }
