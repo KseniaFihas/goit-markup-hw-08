@@ -224,41 +224,59 @@
     padding-right: 0px;
   }
   .footer-soc {
-    margin-left: 70px;
+    margin-left: 94px;
     margin-right: 0;
+    align-items: flex-start;
+    
   }
   .street {
     margin-bottom: 0px;
   }
   .footer-send {
     margin-left: 93px;
-    display: flex;
-    position: relative;
+   display: flex;
+   flex-direction: row;
+ align-items: flex-end;
   }
 
+
+
+.send {
+  align-items: flex-start;
+}
+
   .send span {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .input-email {
     width: 358px;
+    margin-right: 11px;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   .subscribe {
     display: flex;
-
     padding-left: 28px;
     align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 370px;
+  margin-left: 11px;
+  justify-content: center;
+margin: 0;
   }
+
+   .footer-adress {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0;
+   }
 
   .adress {
     font-style: normal;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-bottom: 0px;
   }

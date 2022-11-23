@@ -220,7 +220,7 @@
 
 @media screen and (min-width: 768px) {
   .header__container {
-    min-width: 768px;
+    max-width: 768px;
   }
   .menu-open {
     display: none;
@@ -260,7 +260,7 @@
   .auth {
     flex-direction: row;
     align-items: flex-start;
-    gap: 10px;
+    gap: 40px;
   }
   .header__container {
     min-width: 1200px;
@@ -339,8 +339,9 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
   }
   .overlay .title {
-    font-size: 42px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -712,6 +713,9 @@
     position: absolute;
     bottom: 0px;
   }
+  .hero__container {
+    max-width: 1200px;
+  }
 }
 .pre-title {
   font-weight: 700;
@@ -881,6 +885,9 @@
 @media screen and (min-width: 768px) {
   .container-clients {
     min-width: 768px;
+  }
+  .title-clients {
+    margin-bottom: 30px;
   }
   .client-item {
     width: calc((100% - 60px) / 3);
@@ -1128,8 +1135,9 @@
     padding-right: 0px;
   }
   .footer-soc {
-    margin-left: 70px;
+    margin-left: 94px;
     margin-right: 0;
+    align-items: flex-start;
   }
   .street {
     margin-bottom: 0px;
@@ -1137,28 +1145,41 @@
   .footer-send {
     margin-left: 93px;
     display: flex;
-    position: relative;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .send {
+    align-items: flex-start;
   }
   .send span {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .input-email {
     width: 358px;
+    margin-right: 11px;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   .subscribe {
     display: flex;
     padding-left: 28px;
     align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 370px;
+    margin-left: 11px;
+    justify-content: center;
+    margin: 0;
+  }
+  .footer-adress {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0;
   }
   .adress {
     font-style: normal;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-bottom: 0px;
   }
@@ -1352,7 +1373,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;

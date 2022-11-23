@@ -1,5 +1,7 @@
+
 .hero {
   display: none;
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -44,5 +46,9 @@
     padding-bottom: 27px;
     position: absolute;
     bottom: 0px;
+  }
+
+  .hero__container {
+    max-width: 1200px;
   }
 }
