@@ -270,6 +270,10 @@
   .header__container {
     min-width: 1200px;
   }
+  .auth__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .title {
   font-weight: 900;
