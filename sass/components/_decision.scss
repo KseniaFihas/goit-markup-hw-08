@@ -1,3 +1,4 @@
+
 .title {
   font-weight: 900;
   font-size: 26px;
@@ -74,6 +75,7 @@
 }
 
 @media screen and (min-width: 768px) {
+ 
   .overlay {
     max-width: 768px;
     height: 400px;
@@ -120,9 +122,10 @@
       url(../images/hero.jpg);
   }
 
-  .title {
+  .overlay .title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 
   .button {
@@ -141,4 +144,5 @@
       }
     }
   }
+
 }

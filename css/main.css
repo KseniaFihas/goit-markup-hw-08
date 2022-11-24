@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 480px;
 }
 
 .logo--black {
@@ -220,7 +221,7 @@
 
 @media screen and (min-width: 768px) {
   .header__container {
-    max-width: 768px;
+    min-width: 768px;
   }
   .menu-open {
     display: none;
@@ -234,6 +235,10 @@
     align-items: flex-start;
     margin-left: 0px;
     gap: 10px;
+  }
+  .auth__link {
+    font-size: 12px;
+    line-height: 1.67;
   }
   .current {
     color: #2196f3;
@@ -357,9 +362,10 @@
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   }
-  .title {
+  .overlay .title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
   .button {
     min-width: 216px;
@@ -613,10 +619,6 @@
   fill: hsl(0deg, 0%, 13%);
 }
 
-.details__container {
-  max-width: 480px;
-}
-
 .card__description {
   font-size: 14px;
   line-height: 1.71;
@@ -648,9 +650,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .details__container {
-    min-width: 768px;
-  }
   .card__item {
     width: calc((100% - 30px) / 2);
   }
@@ -713,8 +712,8 @@
     position: absolute;
     bottom: 0px;
   }
-  .hero__container {
-    max-width: 1200px;
+  .container {
+    width: 1200px;
   }
 }
 .pre-title {
@@ -725,10 +724,6 @@
   color: var(--text-color);
   margin-bottom: 30px;
   text-align: center;
-}
-
-.container-team {
-  max-width: 480px;
 }
 
 .team {
@@ -834,10 +829,6 @@
   padding-bottom: 60px;
 }
 
-.container-clients {
-  max-width: 480px;
-}
-
 .title-clients {
   margin-bottom: 50px;
   font-style: normal;
@@ -883,9 +874,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container-clients {
-    min-width: 768px;
-  }
   .title-clients {
     margin-bottom: 30px;
   }
@@ -1373,7 +1361,6 @@ img {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;

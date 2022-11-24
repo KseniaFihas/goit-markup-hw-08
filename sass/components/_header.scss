@@ -1,3 +1,6 @@
+
+
+
 .header {
   border: 1px solid #ececec;
   display: flex;
@@ -8,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 480px;
 }
 
 .logo--black {
@@ -225,7 +229,7 @@
 
 @media screen and (min-width: 768px) {
   .header__container {
-    max-width: 768px;
+    min-width: 768px;
   }
   .menu-open {
     display: none;
@@ -240,6 +244,11 @@
     margin-left: 0px;
     gap: 10px;
   }
+
+    .auth__link {
+      font-size: 12px;
+      line-height: 1.67;
+    }
   .current {
     color: #2196f3;
     position: relative;
@@ -272,4 +281,5 @@
   .header__container {
     min-width: 1200px;
   }
+  
 }
