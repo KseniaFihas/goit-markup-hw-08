@@ -1,4 +1,6 @@
-
+.container.details__container {
+  max-width: 480px;
+}
 
 .card__section {
   width: 100%;
@@ -46,7 +48,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  
+  .container.details__container {
+    min-width: 768px;
+  }
  
 
   .card__item {
@@ -58,7 +62,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .details__container {
+  .container.details__container{
     min-width: 1200px;
   }
   .details {
