@@ -103,7 +103,14 @@
     display: flex;
     flex-wrap: nowrap;
   }
-
+.link-img{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.description-image {
+  flex-grow: 1;
+}
 }
 
 @media screen and (min-width: 1200px) {
